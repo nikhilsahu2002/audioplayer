@@ -49,17 +49,17 @@ export default function Home() {
   return (
     <>
       <div className="">
-        <div class="bg-slate-800 grid grid-cols-12 gap-4 ">
-          <div class="col-span-12 md:col-span-4">
-            <div class="main">
-              <div class="currentplaying">
+        <div className="bg-slate-800 grid grid-cols-12 gap-4 ">
+          <div className="col-span-12 md:col-span-4">
+            <div className="main">
+              <div className="currentplaying">
                 <img
                   width="64"
                   height="64"
                   src="https://img.icons8.com/dusk/64/playlist.png"
                   alt="playlist"
                 />
-                <p class="heading">Currently Playing</p>
+                <p className="heading">Currently Playing</p>
               </div>
               {selectedFileNames.map((file, index) => (
                 <div className="loader" key={index}>
@@ -81,13 +81,13 @@ export default function Home() {
                       <div className="load"></div>
                     </div>
                   ) : (
-                    <div class="play"></div>
+                    <div className="play"></div>
                   )}
                 </div>
               ))}
             </div>
           </div>
-          <div class="col-span-12 md:col-span-8 flex justify-center items-center p-5">
+          <div className="col-span-12 md:col-span-8 flex justify-center items-center p-5">
             <div className="player bg-red-500 p-5  rounded-lg">
               <h2 className="font-semibold text-lg text-white">
                 {playingIndex !== null
